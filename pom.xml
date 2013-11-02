@@ -2,12 +2,12 @@
 			xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>hhf</groupId>
-	<artifactId>ejb-locker</artifactId>
+	<groupId>fr.hhdev</groupId>
+	<artifactId>ejblocker</artifactId>
 	<version>1.0.0</version>
 	<packaging>ejb</packaging>
 
-	<name>ejb-locker</name>
+	<name>ejblocker</name>
 
 	<properties>
 		<endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -45,7 +45,7 @@
 		</dependency>
 	 <dependency>
 	  <groupId>${project.groupId}</groupId>
-	  <artifactId>cdi-logger</artifactId>
+	  <artifactId>cdilogger</artifactId>
 	  <version>1.0.6</version>
 	 </dependency>
 	 <dependency>

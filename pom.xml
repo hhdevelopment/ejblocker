@@ -46,7 +46,7 @@
 	 <dependency>
 	  <groupId>${project.groupId}</groupId>
 	  <artifactId>cdilogger</artifactId>
-	  <version>1.0.6</version>
+	  <version>${project.version}</version>
 	 </dependency>
 	 <dependency>
 			<groupId>javax</groupId>

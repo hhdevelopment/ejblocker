@@ -27,10 +27,12 @@ public class LockedBean {
 	public void reset() {
 		map.clear();
 	}
+
 	/**
 	 * Cette méthode à un mutex sur key, c'est à dire que si 2 process call cette methode avec le même argument. le 2e process attendra la fin du 1er
+	 *
 	 * @param key
-	 * @return 
+	 * @return
 	 */
 	@Locked
 	public Integer lockedMethodWithAnnotedArgument(@LockKey final String key) {
@@ -50,17 +52,19 @@ public class LockedBean {
 
 	/**
 	 * En revanche cette methode n'a pas de regle de lock
+	 *
 	 * @param key
-	 * @return 
+	 * @return
 	 */
 	public Integer unlockedMethodWithAnnotedArgument(final String key) {
 		return lockedMethodWithAnnotedArgument(key);
 	}
-	
+
 	/**
 	 * les methodes annotées "lockedMethodWithAnnotation" se lock mutuellement
+	 *
 	 * @param key
-	 * @return 
+	 * @return
 	 */
 	@Locked("lockedMethodWithAnnotation")
 	public Integer lockedMethod1WithAnnotation(@LockKey final String key) {

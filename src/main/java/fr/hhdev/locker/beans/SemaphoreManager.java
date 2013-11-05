@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package hhf.locker.beans;
+package fr.hhdev.locker.beans;
 
 import java.util.HashMap;
 import java.util.Map;

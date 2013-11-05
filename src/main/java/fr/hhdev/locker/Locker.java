@@ -2,11 +2,11 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package hhf.locker.interceptors;
+package fr.hhdev.locker;
 
-import hhf.locker.annotations.LockKey;
-import hhf.locker.annotations.Locked;
-import hhf.locker.beans.SemaphoreManager;
+import fr.hhdev.locker.annotations.LockKey;
+import fr.hhdev.locker.annotations.Locked;
+import fr.hhdev.locker.beans.SemaphoreManager;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.util.concurrent.Semaphore;

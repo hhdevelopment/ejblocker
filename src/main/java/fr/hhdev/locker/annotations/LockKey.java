@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package hhf.locker.annotations;
+package fr.hhdev.locker.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -4,8 +4,8 @@
  */
 package test.locker;
 
-import hhf.locker.annotations.Locked;
-import hhf.locker.annotations.LockKey;
+import fr.hhdev.locker.annotations.Locked;
+import fr.hhdev.locker.annotations.LockKey;
 import java.util.HashMap;
 import java.util.Map;
 import javax.inject.Singleton;

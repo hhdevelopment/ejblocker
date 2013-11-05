@@ -4,6 +4,7 @@
  */
 package test.locker;
 
+import fr.hhdev.locker.Locker;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -59,7 +60,7 @@ public class LockerTest {
 		File beans = new File("src/main/resources/META-INF/beans.xml");
 		JavaArchive jar = ShrinkWrap.create(JavaArchive.class, "locker.jar")
 				  .addAsManifestResource(new FileAsset(beans), ArchivePaths.create("beans.xml"))
-				  .addPackages(true, "hhf.locker");
+				  .addPackages(true, Locker.class.getPackage());
 		System.out.println(jar.toString(true));
 		return jar;
 	}
@@ -75,7 +76,7 @@ public class LockerTest {
 		JavaArchive jar = ShrinkWrap.create(JavaArchive.class, "test.jar")
 				  .addAsResource(new FileAsset(logback), ArchivePaths.create("logback-test.xml"))
 				  .addAsManifestResource(new FileAsset(beans), ArchivePaths.create("beans.xml"))
-				  .addClasses(LockerTest.class, LockedBean.class, AsyncBean.class);
+				  .addPackages(true, LockerTest.class.getPackage());
 		System.out.println(jar.toString(true));
 		return jar;
 	}

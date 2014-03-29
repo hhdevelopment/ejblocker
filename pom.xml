@@ -4,12 +4,12 @@
 	<parent>
 		<groupId>fr.hhdev</groupId>
 		<artifactId>parent-pom</artifactId>
-		<version>1.0-SNAPSHOT</version>
+		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
 	<groupId>fr.hhdev</groupId>
 	<artifactId>ejblocker</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>ejb</packaging>
 	<name>ejblocker</name>
 

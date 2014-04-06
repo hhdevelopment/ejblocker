@@ -3,15 +3,18 @@
 	<modelVersion>4.0.0</modelVersion>
 	<repositories>
 		<repository>
-			<id>fr.hhdev</id>
+			<id>release</id>
 			<url>http://dev.hhome.fr:8081/artifactory/libs-release-local</url>
+			<snapshots> 
+				<enabled>false</enabled>
+			</snapshots>
 		</repository>
 	</repositories>
 
 	<parent>
 		<groupId>fr.hhdev</groupId>
 		<artifactId>parent-pom</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.1</version>
 	</parent>
 
 	<groupId>fr.hhdev</groupId>
